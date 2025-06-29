@@ -15,3 +15,5 @@ filetype:log inrul:"access.log"
 
 ## Encontrar emails e informacões apartir de um username
 nomeUser*com
+
+## 

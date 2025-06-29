@@ -1,0 +1,4 @@
+dalfox url http://testphp.vulnweb.com/artists.php?artist=1
+
+aumentando profundidade
+dalfox url http://testphp.vulnweb.com/artists.php?artist=1 --deep-domxss

