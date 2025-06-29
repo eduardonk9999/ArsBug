@@ -1,0 +1,17 @@
+## Busca por paginas com titulos
+intitle:index of
+
+## Busca por paginas por um conteuco específicos
+intext:"phpPgAdmin - Login"
+
+## Busca por páginas com valores na URL
+inurl:"phpmyadmin/index.php"
+
+## BUscando por paginas com links específicos
+link:www.site
+
+## Combinando comandos
+filetype:log inrul:"access.log"
+
+## Encontrar emails e informacões apartir de um username
+nomeUser*com

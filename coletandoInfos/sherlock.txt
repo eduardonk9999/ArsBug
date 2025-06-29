@@ -1,0 +1,6 @@
+install
+# pipx install sherlock-project	
+
+
+como usar
+# sherlock nameDoUser

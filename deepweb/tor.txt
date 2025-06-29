@@ -1,0 +1,13 @@
+# sudo apt update
+
+# sudo apt install -y wget gnupg lsb-release
+
+# wget -qO- https://deb.torproject.org/torproject.org/keys/tor-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/tor-archive-keyring.gpg
+
+# echo "deb [signed-by=/usr/share/keyrings/tor-archive-keyring.gpg] https://deb.torproject.org/torproject.org $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/tor.list
+
+# sudo apt update
+
+# sudo apt install -y torbrowser-launcher
+
+# torbrowser-launcher
