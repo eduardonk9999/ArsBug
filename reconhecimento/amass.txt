@@ -1,0 +1,4 @@
+amass intel -org "Facebook Inc"
+
+modulo principal
+amass enum -d site.com -SRC
